@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	int N = 0;
+	int ans =0;
+	scanf("%d", &N);
+	
+	long data[N];
+	for(int i=0; i<N; i++)
+	{
+	    scanf("%ld", &data[i]);
+	    long num = data[i]%10;
+		ans = ans *10 + num;
+
+	}
+	
+    // write your code here
+    // ans =
+    //printf("%d", ans);
+    if(ans % 10 == 0)
+    {printf("\nYes");}
+    else
+    {printf("\nNo");}
+    
+    
+    return 0;
+}
